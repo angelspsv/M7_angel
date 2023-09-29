@@ -11,7 +11,13 @@
         echo "<ul>";
         for($mesa=1; $mesa<11; $mesa++){
             $arrayTaules[$mesa] = rand(0, 5);
-            echo "<li> La taula " . $mesa . " té " . $arrayTaules[$mesa] . " comensals </li>";
+            if ($arrayTaules[$mesa] == 0) {
+                echo "<li> La taula " . $mesa . " està buida </li>";
+            } elseif ($arrayTaules[$mesa] == 5) {
+                echo "<li> La taula " . $mesa . " està plena </li>";
+            } else {
+                echo "<li> La taula " . $mesa . " té " . $arrayTaules[$mesa] . " comensals </li>";
+            }
         }
         echo "</ul>";   
     ?>
