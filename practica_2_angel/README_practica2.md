@@ -6,3 +6,6 @@
 
 Aquí està la [imatge](practica2_angel_2.jpg) del **codi del primer exercici executat**.
 
+[Aquí](https://www.php.net/manual/es/function.rand.php) pots trobar informació de la funció *rand()* utilitzada en la pràctica. 
+
+Aquesta és l'URL del meu repositori de l'assignatura [visita'l](https://github.com/angelspsv/M7_angel.git).
