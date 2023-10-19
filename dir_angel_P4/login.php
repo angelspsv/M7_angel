@@ -7,7 +7,27 @@
 </head>
 <body>
     <?php
+        //conexió a la BBDD
         include("connect_file.php");
+
+        if(isset($_POST["enter"])){
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+
+            
+            $select_query = "SELECT * FROM `users` WHERE `correu` = '$email' AND `contrasenya` = '$password'";
+            $resultat_query = mysqli_query($conn, $select_query);
+
+            if($resultat_query && mysqli_num_rows($resultat_query)>0){
+                //mostrar dades de professor o alumne
+
+
+            } else {
+                header("Location: inici_sessio.html");
+                exit();
+            }
+
+        }
     ?>
 </body>
 </html>
