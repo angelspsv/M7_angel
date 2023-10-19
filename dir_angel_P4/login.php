@@ -10,11 +10,11 @@
         //conexió a la BBDD
         include("connect_file.php");
 
-        if(isset($_POST["enter"])){
-            $email = $_POST["email"];
-            $password = $_POST["password"];
+        if(isset($_POST['enter'])){
+            $email = $_POST['email'];
+            $password = $_POST['password'];
 
-            
+            echo $email;
             $select_query = "SELECT * FROM `users` WHERE `correu` = '$email' AND `contrasenya` = '$password'";
             $resultat_query = mysqli_query($conn, $select_query);
 

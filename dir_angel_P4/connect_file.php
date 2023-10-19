@@ -1,6 +1,6 @@
 <?php
     $db_host = "localhost:3307";
-    $db_user = "root";
+    $db_user = "newuser";
     $db_passwd = "";
     $db_nombre = "escola";
 
