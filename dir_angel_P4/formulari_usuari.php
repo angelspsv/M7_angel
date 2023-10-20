@@ -19,7 +19,7 @@
         }
 
         //consulta query a la BBDD
-        $insert = "INSERT INTO `users`(`nom`, `cognom`, `rol`, `contrasenya`, `correu`, `actiu`) VALUES ('$name','$cognom','$rol','$password','$email','$active')";
+        $insert = "INSERT INTO `users`(`nom`, `cognom`, `rol`, `contrasenya`, `correu`, `actiu`) VALUES ('$name','$surname','$rol','$password','$email','$active')";
 
         //introduim les dades de l'usuari a la BBDD
         $resultat = mysqli_query($conn, $insert);
