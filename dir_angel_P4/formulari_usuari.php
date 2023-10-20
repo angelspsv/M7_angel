@@ -28,5 +28,6 @@
             die("Query fail!");
         }
     }
+    header('Location: formulari_usuari.html');
 
 ?>
