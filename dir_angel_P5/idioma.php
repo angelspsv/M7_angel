@@ -18,5 +18,30 @@
             }
         }
     ?>
+    <table width="25%" border="0" align="center">
+        <tr>
+            <td>Escull idioma</td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="crearCookie.php?idioma=es">
+                    <img src="spain_flag_icon.jpg" width="90" height="60">
+                </a>
+                <h3>SPANISH</h3>
+            </td>
+            <td align="center">
+                <a href="crearCookie.php?idioma=en">
+                    <img src="britain_flag_icon.jpg" width="90" height="60">
+                </a>
+                <h3>ENGLISH</h3>
+            </td>
+            <td align="center">
+                <a href="crearCookie.php?idioma=cat">
+                    <img src="catalan_flag_icon.jpg" width="90" height="60">
+                </a>
+                <h3>CATALAN</h3>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
