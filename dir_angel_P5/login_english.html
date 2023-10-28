@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<body>
+    <div>
+        <form action="user_login_english.php" method="post">
+            <h2>Sign in</h2>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" minlength="8"><br>
+
+            <label>
+                <input type="checkbox" name="remember">Remember me</label>
+            </label>
+
+            <br><input type="submit" name="enter" value="Enter">
+        </form>
+    </div>
+    <div>
+        <br><a href="idioma.php">Back to languages</a><span> | </span>
+        <a href="delete_cookie.php">Delete cookie</a> <span> | </span><a href="index_english.html">New user</a>
+    </div>
+</body>
+</html>
