@@ -23,5 +23,5 @@
             die("Query fail!");
         }
     }
-    header('Location: index_english.html');
+    header('Location: login_english.html');
 ?>

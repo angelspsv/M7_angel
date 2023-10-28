@@ -23,5 +23,5 @@
             die("Query fail!");
         }
     }
-    header('Location: index_catalan.html');
+    header('Location: login_catalan.html');
 ?>
