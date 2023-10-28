@@ -24,19 +24,19 @@
         </tr>
         <tr>
             <td align="center">
-                <a href="crearCookie.php?idioma=es">
+                <a href="crear_cookie.php?idioma=es">
                     <img src="spain_flag_icon.jpg" width="90" height="60">
                 </a>
                 <h3>SPANISH</h3>
             </td>
             <td align="center">
-                <a href="crearCookie.php?idioma=en">
+                <a href="crear_cookie.php?idioma=en">
                     <img src="britain_flag_icon.jpg" width="90" height="60">
                 </a>
                 <h3>ENGLISH</h3>
             </td>
             <td align="center">
-                <a href="crearCookie.php?idioma=cat">
+                <a href="crear_cookie.php?idioma=cat">
                     <img src="catalan_flag_icon.jpg" width="90" height="60">
                 </a>
                 <h3>CATALAN</h3>
