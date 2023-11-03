@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creació d'usuari</title>
+</head>
+<body>
+    <div>
+        <h2>Crear usuari nou</h2>
+        <br>
+        <form action="index.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" name="name"><br>
+
+            <label for="surname">Cognom:</label>
+            <input type="text" name="surname"><br>
+
+            <label for="rol">Triar:</label>
+            <select name="rol">
+                <optgroup>
+                    <option value="Alumnat">Alumnat</option>
+                    <option value="Professorat">Professorat</option>
+                </optgroup>
+            </select><br>
+
+            <label for="password">Contrasenya</label>
+            <input type="password" name="password" minlength="8"><br>
+
+            <label for="email">Correu:</label>
+            <input type="email" name="email"><br>
+
+            <label for="active">Actiu</label>
+            <input type="checkbox" name="active"><br>
+            
+            <input type="submit" name="send" value="Enviar">
+        </form>
+    </div>
+    <div>
+        <br>
+        <b><a href="login.html">Iniciar sessió</a></b>
+    </div>
+</body>
+</html>
