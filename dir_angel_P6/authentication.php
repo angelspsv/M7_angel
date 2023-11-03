@@ -22,18 +22,18 @@
 
         if (mysqli_num_rows($resultado_where) > 0){
             if($rol == "alumnat"){
-                $_SESSION['name'] = $nom;
-                $_SESSION[''] = $contrasenya;
-                $_SESSION['name'] = $nom;
-                $_SESSION['password'] = $contrasenya;
-                $_SESSION['name'] = $nom;
-                $_SESSION['password'] = $contrasenya;
+                $_SESSION['nom'] = $name;
+                $_SESSION['cognom'] = $surname;
+                //$_SESSION['rol'] = $rol;
+                //$_SESSION['password'] = $contrasenya;
+                //$_SESSION['email'] = $correu;
+                //$_SESSION['active'] = $actiu;
 
-                echo "Benvingut!<br>";
-                echo "soc un alumne<br>";
-                echo "nom: " . $name . "<br>";
-                echo "cognom: " . $surname . "<br>";
-                echo "email: " . $email;
+                //echo "Benvingut!<br>";
+                //echo "soc un alumne<br>";
+                //echo "nom: " . $name . "<br>";
+                //echo "cognom: " . $surname . "<br>";
+                //echo "email: " . $email;
             }elseif($rol == "professorat"){
                 echo "Hola " . $name . ", ets professor!!<br>";
                 echo "<br>";
@@ -49,6 +49,6 @@
         }
 
         //mostrem les dades
-        //header('Location: welcome.php');
+        header('Location: welcome.php');
     }
 ?>
