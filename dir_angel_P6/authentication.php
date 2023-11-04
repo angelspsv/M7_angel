@@ -13,33 +13,29 @@
         $salida = mysqli_fetch_assoc($resultado_where);
         $rol = $salida['rol'];
     
-        //query para obtener nombre y apellido a partir del email
-        $names_query = "SELECT `nom`,`cognom` FROM `users` WHERE `correu`='$email'";
-        $resultado_names = mysqli_query($connect, $names_query);
-        $salida_names = mysqli_fetch_assoc($resultado_names);
-        $name = $salida_names['nom'];
-        $surname = $salida_names['cognom'];
+        //query para obtener los datos a partir del email
+        $query = "SELECT `nom`,`cognom`,`rol`,`contrasenya`,`correu` FROM `users` WHERE `correu`='$email'";
+        $resultado_query = mysqli_query($connect, $query);
+        $salida_query = mysqli_fetch_assoc($resultado_query);
+        $name = $salida_query['nom'];
+        $surname = $salida_query['cognom'];
+        $rol = $salida_query['rol'];
+        $password = $salida_query['contrasenya'];
+        $email = $salida_query['correu'];
 
+        //Desem les dades de la query a la sessió
         if (mysqli_num_rows($resultado_where) > 0){
+            $_SESSION['nom'] = $name;
+            $_SESSION['cognom'] = $surname;
+            $_SESSION['rol'] = $rol;
+            $_SESSION['contrasenya'] = $password;
+            $_SESSION['correu'] = $email;
             if($rol == "alumnat"){
-                $_SESSION['nom'] = $name;
-                $_SESSION['cognom'] = $surname;
-                //$_SESSION['rol'] = $rol;
-                //$_SESSION['password'] = $contrasenya;
-                //$_SESSION['email'] = $correu;
-                //$_SESSION['active'] = $actiu;
-
-                //echo "Benvingut!<br>";
-                //echo "soc un alumne<br>";
-                //echo "nom: " . $name . "<br>";
-                //echo "cognom: " . $surname . "<br>";
-                //echo "email: " . $email;
             }elseif($rol == "professorat"){
-                echo "Hola " . $name . ", ets professor!!<br>";
-                echo "<br>";
+                //perfil professorat:
                 $users_query = "SELECT `nom`, `cognom` FROM `users`;";
                 $resultado_users = mysqli_query($connect, $users_query);
-            
+                
                 //imprimir los nombres de todos los usuarios de la bbdd
                 echo "La llista d'usuaris de la base de dades és:<br>";
                 foreach($resultado_users as $row){
