@@ -10,11 +10,10 @@
     
 
     if (empty($_SESSION)) {
-        echo "Sesión no iniciada.<br>";
-        $sessionID = session_id();
-        echo "El identificador de sesión es: $sessionID<br>";
+        echo "Sessió no iniciada.<br>";
+        exit();
     } else {
-        echo "Sesión iniciada.</p>";
+        echo "Sessió iniciada.</p>";
     }
 
     if($rol == "alumnat"){
