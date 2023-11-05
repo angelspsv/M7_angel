@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <form action="register.php" method="post">
+        <label for="email">Email:</label><br>
+        <input type="text" name="email"><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name"><br><br>
+        <label for="surname">Surname:</label><br>
+        <input type="text" name="surname" id="surname"><br><br>
+        <label for="rol">Choose your role</label><br>
+        <select name="rol" id="rol">
+            <option disabled selected>Pick role</option>
+            <option value="professorat">Professor</option>
+            <option value="alumnat">Student</option>
+        </select><br><br>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" name="password" id="password"><br><br>
+        <button type="submit" name="submit">Register!</button><br><br>
+    </form>
+    <a href="loginES.html">Go back to Login</a>
+</body>
+</html>
